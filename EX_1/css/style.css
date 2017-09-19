@@ -172,8 +172,9 @@ footer {
     line-height: 154px;
     position: relative; }
   .section_2_text p {
-    font-size: 14px;
-    transform: translate(-12%, 0%); }
+    font-size: 13px;
+    transform: translate(3%, 0%);
+    margin: 0; }
   .section_2_btn {
     height: 154px;
     float: right;
