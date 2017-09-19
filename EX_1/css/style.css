@@ -70,7 +70,8 @@ body {
   .section_1 .text_blazRobar {
     font-size: 10px;
     position: absolute;
-    bottom: 48px; }
+    bottom: 48px;
+    color: #a6d6df; }
   .section_1 .text_blazRobar:after {
     position: absolute;
     content: "";
@@ -83,18 +84,18 @@ body {
 
 .section_2 {
   line-height: 75px;
-  background: #27212c;
-  border-bottom: 1px solid #e4e1e4;
-  border-top: 1px solid #e4e1e4; }
+  background: #27212c; }
 
 .section_2_text {
   float: left;
   width: 75%;
-  background: #27212c; }
+  background: #27212c;
+  position: relative; }
   .section_2_text p {
+    position: absolute;
     font-size: 10px;
-    color: white;
-    margin-left: 38px; }
+    color: #897a97;
+    margin-left: 12%; }
 
 .section_2_btn {
   float: right;
@@ -161,26 +162,32 @@ footer {
       margin-left: 54px; }
     .section_1 .text_blazRobar {
       font-size: 16px;
-      bottom: 98px; }
+      position: relative;
+      top: 65%; }
     .section_1 .text_blazRobar:after {
       height: 30px;
       width: 18px;
-      right: -230px; }
+      right: 18%; }
   .section_2 {
-    line-height: 152px; }
+    line-height: 154px;
+    position: relative; }
   .section_2_text p {
-    font-size: 16px;
-    margin-left: 54px; }
+    font-size: 14px;
+    transform: translate(-12%, 0%); }
   .section_2_btn {
+    height: 154px;
     float: right;
     width: 25%;
     background: #bc3183;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .section_2_btn img {
+      position: absolute;
       height: 26px;
       width: 16px;
-      vertical-align: middle;
-      cursor: pointer; }
+      cursor: pointer;
+      bottom: 50%;
+      transform: translate(-50%, 50%); }
   .section_3 .section_3_btn {
     line-height: 552px; }
     .section_3 .section_3_btn img {
@@ -199,3 +206,173 @@ footer {
   .last_paragraph {
     display: block;
     margin-top: 40px; } }
+
+@media screen and (max-width: 980px) and (min-width: 640px) {
+  .wrapper {
+    max-width: 980px; }
+  .logo, .btn_menu {
+    display: none; }
+  .navigation {
+    text-align: left;
+    display: block; }
+    .navigation ul {
+      text-align: left;
+      margin-left: 55px; }
+      .navigation ul li {
+        display: inline-block;
+        line-height: 96px;
+        margin-right: 10px; }
+        .navigation ul li a {
+          font-size: 14px; }
+      .navigation ul li:hover {
+        background: none; }
+      .navigation ul li:hover a {
+        -webkit-box-shadow: 0px 2px 0px -1px #6f4890;
+        -moz-box-shadow: 0px 2px 0px -1px #6f4890;
+        box-shadow: 0px 2px 0px -1px #6f4890; }
+  .section_1 {
+    height: 548px; }
+    .section_1 p {
+      font-size: 42px; }
+    .section_1 .text_blazRobar {
+      font-size: 24px;
+      bottom: 164px;
+      position: relative;
+      top: 60%; }
+    .section_1 .text_blazRobar:after {
+      height: 30px;
+      width: 18px;
+      right: 13%; }
+  .section_2 {
+    line-height: 246px;
+    position: relative; }
+    .section_2 .section_2_text p {
+      font-size: 22px;
+      position: absolute; }
+    .section_2 .section_2_btn {
+      height: 246px;
+      position: relative; }
+      .section_2 .section_2_btn img {
+        position: absolute;
+        bottom: 50%;
+        transform: translate(-50%, 50%); }
+  .section_3 {
+    font-size: 0px;
+    line-height: 0;
+    letter-spacing: -1px;
+    height: 298px; }
+    .section_3 .section_3_btn {
+      height: 100%;
+      width: 33.334%; }
+    .section_3 .photo_1, .section_3 .photo_2 {
+      width: 33.334%;
+      height: 100%; }
+      .section_3 .photo_1 img, .section_3 .photo_2 img {
+        display: none; }
+    .section_3 .photo_1 {
+      background: url(../img/pic_1.png) no-repeat center/cover; }
+    .section_3 .photo_2 {
+      background: url(../img/pic_2.png) no-repeat center/cover; }
+  .section_3_btn, .photo_1, .photo_2 {
+    display: inline-block;
+    vertical-align: top; }
+  .wrapper_footer {
+    width: 100%;
+    padding: 50px; }
+  .blaz_text {
+    font-size: 24px; }
+  .text_lorem {
+    float: left;
+    width: 49%;
+    padding-top: 20px; }
+  .right_lorem {
+    margin-left: 2%; }
+  .last_paragraph {
+    display: block; } }
+
+@media screen and (min-width: 981px) {
+  .wrapper {
+    max-width: 1020px;
+    margin: 20px auto;
+    -webkit-box-shadow: 0px 0px 5px 0px #5e5b5e;
+    -moz-box-shadow: 0px 0px 5px 0px #5e5b5e;
+    box-shadow: 0px 0px 5px 0px #5e5b5e; }
+  .logo, .btn_menu {
+    display: none; }
+  .navigation {
+    text-align: left;
+    display: block; }
+    .navigation ul {
+      text-align: left;
+      margin-left: 55px; }
+      .navigation ul li {
+        display: inline-block;
+        line-height: 96px;
+        margin-right: 10px; }
+        .navigation ul li a {
+          font-size: 14px; }
+      .navigation ul li:hover {
+        background: none; }
+      .navigation ul li:hover a {
+        -webkit-box-shadow: 0px 2px 0px -1px #6f4890;
+        -moz-box-shadow: 0px 2px 0px -1px #6f4890;
+        box-shadow: 0px 2px 0px -1px #6f4890; }
+  .section_1 {
+    height: 580px; }
+    .section_1 p {
+      font-size: 42px; }
+    .section_1 .text_blazRobar {
+      font-size: 24px;
+      bottom: 164px;
+      position: relative;
+      top: 60%; }
+    .section_1 .text_blazRobar:after {
+      height: 30px;
+      width: 18px;
+      right: 13%; }
+  .section_2 {
+    line-height: 246px;
+    position: relative; }
+    .section_2 .section_2_text p {
+      font-size: 22px;
+      position: absolute; }
+    .section_2 .section_2_btn {
+      height: 246px;
+      position: relative; }
+      .section_2 .section_2_btn img {
+        position: absolute;
+        bottom: 50%;
+        transform: translate(-50%, 50%); }
+  .section_3 {
+    font-size: 0px;
+    line-height: 0;
+    letter-spacing: -1px;
+    height: 298px; }
+    .section_3 .section_3_btn {
+      height: 100%;
+      width: 33.334%; }
+    .section_3 .photo_1, .section_3 .photo_2 {
+      width: 33.334%;
+      height: 100%; }
+      .section_3 .photo_1 img, .section_3 .photo_2 img {
+        display: none; }
+    .section_3 .photo_1 {
+      background: url(../img/pic_1.png) no-repeat center/cover; }
+    .section_3 .photo_2 {
+      background: url(../img/pic_2.png) no-repeat center/cover; }
+  .section_3_btn, .photo_1, .photo_2 {
+    display: inline-block;
+    vertical-align: top; }
+  .wrapper_footer {
+    width: 100%;
+    padding: 50px 50px 180px 50px; }
+  .blaz_text {
+    font-size: 24px; }
+  .text_lorem {
+    float: left;
+    width: 49%;
+    padding-top: 20px; }
+  .right_lorem {
+    margin-left: 2%; }
+  .last_paragraph {
+    display: block; } }
