@@ -171,10 +171,13 @@ footer {
   .section_2 {
     line-height: 154px;
     position: relative; }
-  .section_2_text p {
-    font-size: 13px;
-    transform: translate(3%, 0%);
-    margin: 0; }
+  .section_2_text {
+    margin: 0 auto;
+    float: none; }
+    .section_2_text p {
+      font-size: 13px;
+      margin: 0;
+      left: -30px; }
   .section_2_btn {
     height: 154px;
     float: right;
