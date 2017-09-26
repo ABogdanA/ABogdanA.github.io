@@ -276,12 +276,14 @@ span {
   font-weight: 400;
   font-weight: 500;
   color: #fff;
-  transition: 2s; }
+  transition: 2s;
+  -webkit-appearance: none; }
 
 .activ-search__sub:hover {
   background: #CC3E40;
   text-decoration: none;
-  transition: 2s; }
+  transition: 2s;
+  -webkit-appearance: none; }
 
 .wrapper_footer {
   border-top: 4px solid #ff4e50;
@@ -397,7 +399,8 @@ span {
   .activ-search__sub {
     float: right;
     width: 150px;
-    margin: 0 10% 0 0; }
+    margin: 0 10% 0 0;
+    -webkit-appearance: none; }
   .wrapper_footer {
     width: 100%; }
   .footer_title, .footer_block, .footer_Partners {
@@ -453,7 +456,8 @@ span {
   .activ-search__sub {
     float: none;
     margin: 0 0 0 20px;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-appearance: none; }
   .footer_design {
     margin-right: 10%; }
   .wrapper_footer .footer_title {
