@@ -262,7 +262,7 @@ span {
   color: #333; }
 
 .activ-search__in:focus {
-  outline: 1px solid  #ff4e50; }
+  outline: 1px solid #ff4e50; }
 
 .activ-search__sub {
   display: block;
@@ -345,7 +345,8 @@ span {
       margin-top: 36px; }
   .wrapper_section {
     max-width: 959px; }
-    .wrapper_section .step_1, .wrapper_section .step_2 {
+    .wrapper_section .step_1,
+    .wrapper_section .step_2 {
       float: left;
       width: 32%;
       margin-right: 2%; }
@@ -403,7 +404,9 @@ span {
     -webkit-appearance: none; }
   .wrapper_footer {
     width: 100%; }
-  .footer_title, .footer_block, .footer_Partners {
+  .footer_title,
+  .footer_block,
+  .footer_Partners {
     float: left; }
   .footer_design {
     float: right;
@@ -458,11 +461,11 @@ span {
     margin: 0 0 0 20px;
     display: inline-block;
     -webkit-appearance: none; }
-  .footer_design {
-    margin-right: 10%; }
   .wrapper_footer .footer_title {
     margin: 0 15% 0 10%; }
   .wrapper_footer .footer_block {
     margin-right: 10%px; }
     .wrapper_footer .footer_block p {
-      margin: 0 0 10px 0; } }
+      margin: 0 0 10px 0; }
+  .footer_design {
+    margin-right: 10%; } }
