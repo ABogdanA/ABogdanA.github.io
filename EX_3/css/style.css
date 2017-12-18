@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,300|Montserrat:700,400");
 * {
@@ -566,21 +567,23 @@ header {
   .round_pick_slider {
     margin-top: 172px; }
   .section_1_wrapper {
-    text-align-last: justify; }
+    text-align: center; }
   .section_content {
     width: 100%; }
   .left_offset_content_text {
-    margin-left: 60px; }
+    margin-left: 60px;
+    float: left; }
   .right_offset_content_text {
-    margin-right: 22px; }
+    margin-right: 22px;
+    float: right; }
   .content_text {
     width: 22%;
     display: inline-block;
-    text-align-last: left; }
+    text-align: left; }
     .content_text + p {
       height: 130px; }
     .content_text .text_read_more {
-      text-align-last: right; }
+      text-align: right; }
   .section_2_wrapper {
     text-align: center;
     padding: 100px 0 72px 0;
@@ -628,19 +631,35 @@ header {
       width: 100%; }
     .section_logo_wrapper .img_logo {
       width: 100%;
-      text-align-last: justify;
-      height: 125px; }
+      text-align: justify;
+      font-size: 0;
+      /* убираем горизонтальные отступы */
+      line-height: 40px;
+      /* ...и вертикальные в некоторых браузерах */
+      letter-spacing: -1px;
+      /* переубеждаем webkit'ы */ }
       .section_logo_wrapper .img_logo li {
         display: inline-block;
         position: static;
-        vertical-align: middle; }
+        vertical-align: middle;
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: normal; }
+    .section_logo_wrapper ul li.helper {
+      width: 100%;
+      height: 0;
+      visibility: hidden; }
   .section_news-categories {
-    text-align-last: justify; }
+    text-align: justify; }
   .text_news_categories {
     display: inline-block;
     width: 30%;
-    height: 194px;
-    text-align-last: left; }
+    height: 188px;
+    text-align: left; }
+  .helper_clear {
+    margin: 0;
+    padding: 0;
+    height: 0; }
   .wraper_footer p {
     text-align: right;
     margin-right: 1%; }
