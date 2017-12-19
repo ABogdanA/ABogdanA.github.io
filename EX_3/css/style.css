@@ -455,7 +455,8 @@ header {
     .starts_here .text_starts_here {
       font-size: 14px;
       text-align: justify;
-      width: 100%; }
+      width: 100%;
+      -ms-text-justify: inter-ideograph; }
   .starts_here:before {
     top: 25px;
     background: url(../img/ikons_2.png) no-repeat;
@@ -632,6 +633,7 @@ header {
     .section_logo_wrapper .img_logo {
       width: 100%;
       text-align: justify;
+      -ms-text-justify: inter-ideograph;
       font-size: 0;
       /* убираем горизонтальные отступы */
       line-height: 40px;
@@ -650,7 +652,8 @@ header {
       height: 0;
       visibility: hidden; }
   .section_news-categories {
-    text-align: justify; }
+    text-align: justify;
+    -ms-text-justify: inter-ideograph; }
   .text_news_categories {
     display: inline-block;
     width: 30%;
