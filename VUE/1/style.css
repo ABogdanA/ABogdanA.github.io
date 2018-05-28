@@ -1,0 +1,21 @@
+body {
+    background: grey;
+}
+.wrapper{
+    margin-top: 20px;
+    text-align: center;
+}
+.sample{
+    max-width: 50%;
+    margin: 0 auto;
+}
+p{
+    text-align: left;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 10px;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+}

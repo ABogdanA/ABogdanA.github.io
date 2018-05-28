@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_1</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="sample">
+     <button @click="show = !show"><span>Show menu</span></button>
+		<transition name="slide-fade">
+		<nav :class="active" v-on:click.prevent class="nav_item" v-if="show">
+			<a href="#" class="home" v-on:click="makeActive('home')">Главная</a>
+			<a href="#" class="projects" v-on:click="makeActive('projects')">Проекты</a>
+			<a href="#" class="services" v-on:click="makeActive('services')">Услуги</a>
+			<a href="#" class="contact" v-on:click="makeActive('contact')">Контакты</a>
+
+		</nav>
+		</transition>
+	  </div>
+	</div>
+</div>
+<script>
+    new Vue({
+        el:'.sample',
+        data: {
+         active:'home',
+			show:true
+        },
+computed: {
+
+},
+        methods: {
+			makeActive: function(item){
+			    this.active = item;
+			}
+        }
+    });
+</script>
+</body>
+</html>
